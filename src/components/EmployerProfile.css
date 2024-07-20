@@ -1,0 +1,50 @@
+.employer-profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .employer-profile-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .employer-profile-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .employer-profile-container label {
+    margin-bottom: 10px;
+  }
+  
+  .employer-profile-container input,
+  .employer-profile-container textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .employer-profile-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .employer-profile-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .employer-profile-container p {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+  }
+  
