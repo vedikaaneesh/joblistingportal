@@ -1,0 +1,53 @@
+/* employer.css */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.welcome-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.employer-image {
+    width: 400px;
+    height: 250px;
+   
+}
+
+h1 {
+    color: #201E43;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555555;
+    font-size: 1.2em;
+}
+
+.cta-section {
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #134B70;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0e3b60;
+}

@@ -1,63 +1,75 @@
+/* Center-aligning the container */
 .job-listings-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .jobs-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .job-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: calc(33.333% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .job-card h2 {
-    margin-top: 0;
-  }
-  
-  .job-card p {
-    margin: 8px 0;
-  }
-  
-  .edit-form-container {
-    margin-top: 20px;
-  }
-  
-  .edit-form-container form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .edit-form-container label {
-    margin-bottom: 10px;
-  }
-  
-  .edit-form-container input, 
-  .edit-form-container textarea {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .edit-form-container button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .edit-form-container button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Center-aligning the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #508C9B; /* Adjust to your theme color */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #407A8C; /* Darker shade on hover */
+}
+
+/* Styling the job cards */
+.job-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.job-card h3 {
+  margin: 0;
+  color: #201E43; /* Dark color for job title */
+}
+
+.job-card p {
+  margin: 5px 0;
+}
+
+/* Dark color for Job Listings heading */
+h2 {
+  color: #201E43; /* Dark color */
+  margin-bottom: 20px;
+}

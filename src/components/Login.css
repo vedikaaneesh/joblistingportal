@@ -1,0 +1,89 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #201E43 0%, #134B70 50%, #508C9B 100%);
+    text-align: center;
+    position: relative;
+  }
+  
+  h2 {
+    color: #EEEEEE;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #201E43;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    background: #134B70;
+    border: none;
+    color: #EEEEEE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #508C9B;
+  }
+  
+  .message, .error {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .message {
+    color: rgb(198, 241, 198);
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #508C9B;
+    box-shadow: 0 0 10px rgba(80, 140, 155, 0.5);
+    transition: all 0.3s;
+  }
+  

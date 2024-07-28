@@ -1,0 +1,19 @@
+.home-container {
+    background: linear-gradient(to bottom, #e0f7fa, #042d32); /* Light blue gradient background */
+    color: #1E3A8A; /* Dark blue text color */
+    padding: 20px;
+    text-align: center; /* Center-align text */
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  }
+  
+  .home-container h2 {
+    color: #1E3A8A; /* Dark blue text color */
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .home-container p {
+    color: #1E3A8A; /* Dark blue text color */
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+  

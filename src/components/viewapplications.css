@@ -1,0 +1,38 @@
+/* viewapplications.css */
+.applications-container {
+  padding: 20px;
+}
+
+.applications-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.applications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.application-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(50% - 20px); /* Two cards per row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application-card h2 {
+  margin-top: 0;
+  color: rgb(26, 9, 77); /* Change title color to black */
+}
+
+.application-card p {
+  margin: 10px 0;
+}
+
+.application-card strong {
+  display: block;
+  margin-bottom: 5px;
+}

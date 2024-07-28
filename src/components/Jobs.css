@@ -1,0 +1,18 @@
+/* src/components/Jobs.css */
+.jobs-container {
+    text-align: center; /* Center-align text */
+    color: #1E3A8A; /* Dark blue text color */
+    padding: 20px;
+  }
+  
+  .jobs-header {
+    color: #1E3A8A; /* Dark blue text color */
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .jobs-description {
+    color: #1E3A8A; /* Dark blue text color */
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+  

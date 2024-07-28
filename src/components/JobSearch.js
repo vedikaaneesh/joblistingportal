@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
 import './JobSearch.css';
+import img1 from '../images/img1.png';
+import img2 from '../images/img2.png';
 
 const JobSearch = () => {
     const [keyword, setKeyword] = useState('');
@@ -13,7 +15,7 @@ const JobSearch = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedJobId, setSelectedJobId] = useState(null);
     const [coverLetter, setCoverLetter] = useState('');
-    const [jobSeekerId] = useState(1); // Replace with actual job seeker ID from your authentication system
+    const [jobSeekerId] = useState(1);
 
     const handleSearch = async (e) => {
         e.preventDefault();
@@ -61,7 +63,11 @@ const JobSearch = () => {
 
     return (
         <div className="job-search">
-            <h2>Find Your Dream Job</h2>
+            <img src={img1} alt="Left decoration" className="hero-image hero-image-left" />
+            <div className="hero-text" style={{ color: '#1E3A8A' }}>
+                <h2>Find Your Dream Job</h2>
+            </div>
+            <img src={img2} alt="Right decoration" className="hero-image hero-image-right" />
             <form onSubmit={handleSearch}>
                 <div className="form-group">
                     <label>Keyword:</label>
@@ -98,10 +104,10 @@ const JobSearch = () => {
                 {jobs.map(job => (
                     <div key={job.id} className="job-card">
                         <h3>{job.title}</h3>
-                        <p>{job.company}</p>
-                        <p>{job.location}</p>
-                        <p>{job.type}</p>
-                        <p>{job.description}</p>
+                        <p><strong>Company:</strong> {job.company}</p>
+                        <p><strong>Location:</strong> {job.location}</p>
+                        <p><strong>Job Type:</strong> {job.type}</p>
+                        <p><strong>Description:</strong> {job.description}</p>
                         <button onClick={() => handleApplyClick(job.id)}>Apply Now</button>
                     </div>
                 ))}

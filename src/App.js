@@ -10,7 +10,7 @@ import ApplicationViewing from './components/ApplicationViewing';
 import EmployerProfile from './components/EmployerProfile';
 import JobSeekerProfile from './components/JobSeekerProfile';
 import Login from './components/Login';
-import './App.css'; // Make sure you import your CSS file here
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,6 +23,8 @@ function App() {
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} setUserType={setUserType} />} />
         <Route path="/home" element={isLoggedIn && userType === 'jobseeker' ? <Home /> : <Navigate to="/login" />} />
         <Route path="/employer" element={isLoggedIn && userType === 'employer' ? <Employer /> : <Navigate to="/login" />} />
+        <Route path="/manage-listings" element={<JobListings />} />
+                <Route path="/view-applications" element={<ApplicationViewing />} />
         <Route path="/jobs" element={isLoggedIn && userType === 'jobseeker' ? <Jobs /> : <Navigate to="/login" />} />
         <Route path="/profile" element={isLoggedIn && userType === 'jobseeker' ? <JobSeekerProfile /> : <Navigate to="/login" />} />
         <Route path="/job-listings" element={isLoggedIn && userType === 'employer' ? <JobListings /> : <Navigate to="/login" />} />
